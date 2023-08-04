@@ -12,7 +12,7 @@ int treeperf(const binary_tree_t *tr)
 	{
 		lef = 1 + treeperf(tr->left);
 		rig = 1 + treeperf(tr->right);
-		if (rig == l && rig != 0 && lef != 0)
+		if (rig == lef && rig != 0 && lef != 0)
 			return (rig);
 		return (0);
 	}
